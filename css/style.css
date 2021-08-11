@@ -1,0 +1,348 @@
+/* ==================================== ESTILO CSS DO SITE TRANSCARGAS LOGÍSTICA ==================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat", sans-serif;
+  color: #1d1d1d;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  padding-right: 0 !important;
+}
+
+.modal-open {
+  /* overflow: visible; */
+  text-align: center;
+}
+
+/*  ======================= ESTILO DO SCROLLBAR =======================  */
+
+body::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1d1d1d;
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: hsl(130, 100%, 29%);
+  outline: 1px solid slategrey;
+}
+/*  ======================= FIM DO SCROLLBAR =======================  */
+
+/*  ======================= INICIO DA NAVBAR =======================  */
+.navbar {
+  background-color: #1d1d1d;
+}
+.navbar .navbar-nav .nav-link {
+  margin-left: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 12px 20px;
+  border-radius: 4px;
+  transition: 0.3s linear;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #1d1d1d;
+  font-weight: 600;
+  background: #fff;
+  transform: scale(1.1);
+}
+
+/*  ======= Icones da NavBar ========  */
+
+.home {
+  color: #009419;
+  margin-right: 5px;
+}
+
+.sobre {
+  color: #009419;
+  margin-right: 10px;
+}
+
+.escolta {
+  color: #ff7b00;
+  margin-right: 5px;
+}
+
+.galeria {
+  color: #009419;
+  margin-right: 5px;
+}
+
+.join {
+  color: #009419;
+  margin-right: 5px;
+}
+
+/*  ======= Icones da NavBar ========  */
+
+/*  ======================= FIM DA NAVBAR =======================  */
+
+/*  ======================= ATRIBUTOS E PARCEIROS DA INDEX =======================  */
+.index-cards {
+  margin-bottom: 10%;
+}
+.parceiros-cards {
+  margin: 10% auto;
+}
+
+.index-cards .card,
+.parceiros-cards .card {
+  text-align: center;
+  border: none;
+  box-shadow: none;
+  border-radius: 4px;
+  transition: 0.3s linear;
+  padding: 15px;
+}
+.index-cards .card:hover,
+.parceiros-cards .card:hover {
+  border-radius: 10px;
+  transform: scale(0.95);
+  background-color: #e9e9e9;
+}
+
+.index-cards .card a,
+.parceiros-cards .card a {
+  text-decoration: none;
+}
+.parceiros-cards span {
+  color: #009419;
+  font-weight: 700;
+}
+
+/*  ======================= ATRIBUTOS E PARCEIROS DA INDEX =======================  */
+
+.content-single-block:hover {
+  color: #1d1d1d;
+  background: #ececec;
+}
+.content-single-block.content-cta {
+  padding-bottom: 40px;
+}
+.content-single-block {
+  padding-top: 60px;
+}
+
+/*  ======================= INICIO ESTILOS DAS JUMBOTRONS  ======================= */
+
+.jumbotron {
+  background-color: #e9e9e9;
+} /*ESTILO GLOBAL DAS JUMBOTRONS*/
+
+.jumbotron-principal .jumbotron {
+  background-color: transparent;
+} /*JUMBOTRON PRINCIPAL DA INDEX.HTML*/
+
+.jumbotron-sobre .jumbotron {
+  background-color: #e9e9e9;
+  margin-bottom: 5%;
+} /*JUMBOTRON DO FIM DA PAGINA SOBRE*/
+
+/*  ======================= FIM DOS ESTILOS DAS JUMBOTRONS  ======================= */
+
+@media only screen and (max-width: 1024px) {
+  .bla {
+    height: 12vh !important;
+  }
+}
+@media only screen and (width: 1024px) {
+  .s1 p {
+    font-size: 20px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bla {
+    width: 100% !important;
+    height: 8vh !important;
+    background-size: 70vh !important;
+    background-position: center !important;
+  }
+}
+.bla {
+  height: 34vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../img/sobre.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.img_home {
+  border-radius: 0;
+  margin: 10% auto;
+  width: 100%;
+  background-color: #009419;
+  background-size: cover;
+  background-image: url("../img/img6.png");
+  background-attachment: fixed;
+}
+.img_home h2 {
+  color: white;
+}
+
+.teste video {
+  width: 100%;
+}
+.img-teste {
+  position: absolute;
+  background-color: #00000081;
+}
+.img-teste img {
+  position: relative;
+  width: 100%;
+  animation: img-teste 4s;
+}
+
+@keyframes img-teste {
+  0% {
+    opacity: 0%;
+    top: -100px;
+  }
+
+  70% {
+    opacity: 0%;
+    top: -70px;
+  }
+
+  100% {
+    opacity: 100%;
+    top: 0;
+  }
+}
+
+/*  ======================= ACORDEÃO =======================  */
+.accordion {
+  margin: 10% auto;
+}
+.accordion .container .card .btn {
+  color: #009419;
+  font-weight: bold;
+}
+.accordion .container .card .btn:hover {
+  text-decoration: none;
+}
+.accordion .container .card .btn:focus {
+  text-decoration: none;
+}
+/*  ======================= ACORDEÃO =======================  */
+
+/*  ======================= FORMULARIO DE CONTATO =======================  */
+form {
+  width: 32%;
+  max-width: 550px;
+  margin: 7% auto;
+  text-align: center;
+  /* border: 1px solid #0094195f;    */
+  border-radius: 3%;
+  padding: 25px 0;
+  box-shadow: -3px 6px 18px -3px rgb(0 0 0 / 20%);
+}
+form fieldset {
+  padding: 20px 40px;
+}
+form legend {
+  text-align: center;
+  font-size: 35px;
+  padding-top: 15px;
+  color: #009419;
+}
+form input[type="text"] {
+  display: inline-block;
+  margin-top: 30px;
+  width: 85%;
+  padding: 10px 30px;
+  border-radius: 15px;
+}
+.input {
+  display: inline-block;
+  text-align: left;
+  margin-top: 20px;
+}
+form textarea:focus,
+form input[type="text"]:focus {
+  outline: none;
+}
+form textarea,
+form input[type="text"] {
+  border: 1px solid #ccc;
+}
+form textarea {
+  margin-top: 30px;
+  width: 85%;
+  height: 140px;
+  padding: 10px 30px;
+  resize: none;
+  border-radius: 15px;
+}
+form input[type="submit"] {
+  margin-top: 30px;
+  border: 0;
+  width: 85%;
+  height: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border: 2px solid #009419;
+  color: #009419;
+  background-color: transparent;
+  border-radius: 15px;
+  transition: 0.3s;
+}
+form input[type="submit"]:hover {
+  background-color: #009419;
+  color: white;
+}
+/*  ======================= FORMULARIO DE CONTATO =======================  */
+
+/*  ======================= BOTÃO BACK TO TOP =======================  */
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  background-color: #00941985;
+  cursor: pointer;
+  padding: 10px 15px;
+  border-radius: 35%;
+  transition: 0.3s;
+}
+#myBtn i {
+  color: white;
+  font-size: 25px;
+}
+#myBtn:hover {
+  background-color: #009419;
+}
+/*  ======================= BOTÃO BACK TO TOP =======================  */
+
+/*  ======================= INICIO DO FOOTER =======================  */
+
+footer.footer {
+  padding: 1px 0;
+  text-align: center;
+  background-color: #1d1d1d;
+}
+
+footer.footer p {
+  margin-top: 2%;
+  color: #009419;
+  padding: 4px 0;
+  font-size: 16px;
+}
+
+/*  ======================= FIM DO FOOTER =======================  */
+
+/* ==================================== ESTILO CSS DO SITE TRANSCARGAS LOGÍSTICA ==================================== */
